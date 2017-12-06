@@ -6,7 +6,7 @@ from datetime import datetime
 from aiohttp import web
 
 def index(request):
-    return web.Response(body=b'<html><title>127.0.0.1</title><h1>Awesome</h1><html>')
+    return web.Response(body=b'<html><title>127.0.0.1</title><h1>Awesome</h1><html>', content_type='text/html')
 
 async def init(loop):
     app = web.Application(loop=loop)
