@@ -1,7 +1,6 @@
 # !/Users/xxpang/anaconda3/bin/python3
 # -*- coding: utf-8 -*-
 
-__author__ = 'xxpang'
 
 import asyncio
 import logging

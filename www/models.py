@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 # Models for user, blog, comment
 
-__author__ = 'xxpang'
 
 import time
 import uuid
