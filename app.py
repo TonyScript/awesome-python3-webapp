@@ -1,9 +1,15 @@
-import logging; logging.basicConfig(level=logging.INFO)
+# !/Users/xxpang/anaconda3/bin/python3
+# -*- coding: utf-8 -*-
 
-import asyncio, os, json, time
+import logging
+logging.basicConfig(level=logging.INFO)
+import asyncio
+import os
+import json
+import time
 from datetime import datetime
-
 from aiohttp import web
+
 
 def index(request):
     return web.Response(body=b'<html><title>127.0.0.1</title><h1>Awesome</h1><html>', content_type='text/html')
