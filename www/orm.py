@@ -1,6 +1,8 @@
 # !/Users/xxpang/anaconda3/bin/python3
 # -*- coding: utf-8 -*-
 
+__author__ = 'Michael Liao'
+
 import asyncio, logging
 
 import aiomysql
@@ -23,12 +25,6 @@ async def create_pool(loop, **kw):
         minsize=kw.get('minsize', 1),
         loop=loop
     )
-
-async def destory_pool():
-    global pool
-    if pool is not None :
-        pool.close()
-        await pool.wait_closed()
 
 async def select(sql, args, size=None):
     log(sql, args)
